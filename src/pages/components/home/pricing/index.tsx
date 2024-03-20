@@ -21,7 +21,7 @@ import PricingPlanItem from './item'; // Ensure the correct path
  */
 const PricingSection: React.FC = () => {
   return (
-    <section className="container-fluid py-5 bg-light">
+    <section className="container-fluid py-5 bg-white">
       <h3 className='text-center px-1 py-1'>Our Pricing</h3>
       <div className="container align-center text-center row justify-content-center pt-5 mx-auto">
         {Boolean(pricingPlans) && pricingPlans.map((plan, index) => (
