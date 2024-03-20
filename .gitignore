@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+public/courses/blockchain.jpg
+public/courses/data-science.jpg
+public/courses/digital-marketing.jpg
+public/courses/frontend.jpg
+public/courses/python.jpg
+public/courses/ui-design.jpg
+public/learnly-background.jpg
