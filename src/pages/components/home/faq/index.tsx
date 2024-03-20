@@ -15,7 +15,7 @@ import faqs, { Faq } from '@/lib/data/faqs';
  */
 const FAQSection: React.FC = () => {
   return (
-    <section className="container-fluid py-5">
+    <section className="container-fluid bg-white py-5">
               <div className='container'>
 
       <h2 className="text-center mb-5">Frequently Asked Questions</h2>

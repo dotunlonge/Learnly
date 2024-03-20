@@ -19,7 +19,7 @@ import BenefitItem from './item';
 */
 const BenefitsSection: React.FC = () => {
   return (
-    <section className="container-fluid py-5">
+    <section className="container-fluid bg-white py-5">
       <div className='container'>
         <h2 className="text-center mb-5">Our Benefits</h2>
         <div className="px-3 row row-cols-1 row-cols-md-3 g-4 justify-content-center">
