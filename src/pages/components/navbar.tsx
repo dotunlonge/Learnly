@@ -50,7 +50,11 @@ const Navbar: React.FC = () => {
             <Link  className="navbar-brand" href="#">Learnly</Link>
             {/* Adjusted button to toggle the navbar collapse state */}
             <button className="navbar-toggler" type="button" onClick={handleToggleNavCollapse} aria-controls="navbarNavDropdown" aria-expanded={!isNavCollapsed} aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+            {isNavCollapsed ? (
+                <span className="navbar-toggler-icon"></span>
+              ) : (
+                <span className="toggler-icon-x">X</span>
+              )}
             </button>
             {/* Adjusted div to show/hide based on isNavCollapsed state */}
             <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNavDropdown">

@@ -180,6 +180,16 @@ a {
   align-items: center;
 }
 
+.toggler-icon-x{
+  display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+
 @media(max-width: 1024px){
   .navbar.isLargeScreen{
     padding-right: 0.5rem;
