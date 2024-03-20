@@ -65,12 +65,12 @@ const Footer: React.FC = () => {
         </div>
         <hr/>
         {/* Copyright and social media links */}
-        <div className="row align-items-center">
+        <div className="footer-wrapper">
           <div className="col-md-7 col-lg-8">
-            <p className="text-left text-md-left">© {new Date().getFullYear()} Learnly</p>
+            <p className="text-left text-md-left float-left">© {new Date().getFullYear()} Learnly</p>
           </div>
           <div className="col-md-5 col-lg-4">
-            <div className="text-center text-md-right">
+            <div className="text-center text-md-right float-right">
               <ul className="list-unstyled list-inline">
                 <li className="list-inline-item">
                   <Link href="https://facebook.com" className="btn-floating btn-sm text-dark" style={{ fontSize: '1.2rem' }}><FaFacebookF /></Link>

@@ -164,6 +164,22 @@ a {
   }
 }
 
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.footer-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 @media(max-width: 1024px){
   .navbar.isLargeScreen{
     padding-right: 0.5rem;
