@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
     }, []);
       
     return (
-        <nav id='main-navbar' className={`z-index-2 position-fixed container-fluid navbar navbar-expand-lg navbar-light bg-white isLargeScreen`}>
+        <nav id='main-navbar' className={`z-index-2 position-fixed container-fluid navbar navbar-expand-lg navbar-light bg-light isLargeScreen`}>
           <div className={`container`}>
             <Link  className="navbar-brand" href="#">Learnly</Link>
             {/* Adjusted button to toggle the navbar collapse state */}

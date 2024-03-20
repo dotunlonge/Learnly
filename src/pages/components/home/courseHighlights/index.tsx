@@ -21,7 +21,7 @@ import courseHighlights, { CourseHighlight } from '@/lib/data/courseHighlights';
  */
 const CourseHighlightsSection: React.FC = () => {
   return (
-    <section className="py-5 bg-white container-fluid">
+    <section className="py-5 bg-light container-fluid">
       <div className="container">
         <h2 className="text-center mb-4">Our Courses</h2>
         <div className="row row-cols-1 row-cols-md-3 g-4 my-5">
