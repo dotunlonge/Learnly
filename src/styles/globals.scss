@@ -133,6 +133,7 @@ a {
   background-attachment: fixed;
   min-height: 30rem;
   max-height: 50rem;
+  margin-top: 3.5em;
   &::before{
     position: absolute;
     content: "";
@@ -171,6 +172,7 @@ a {
     padding-bottom: 1rem;
     & > div{
       padding: 0 1rem;
+      max-width: 100%;
     }
   }
 }

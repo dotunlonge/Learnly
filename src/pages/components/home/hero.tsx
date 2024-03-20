@@ -18,8 +18,8 @@ import Link from 'next/link';
 const HeroSection: React.FC = () => {
   return (
     // Adjusted container-fluid class for full width and my-3 for margin
-    <section className="p-3 bg-light text-white container-fluid d-flex justify-content-center align-items-center" id='heroSection'>
-      <div className="text-center">
+    <section className="p-3 bg-white text-white container-fluid d-flex justify-content-center align-items-center" id='heroSection'>
+      <div className="text-center container">
         {/* Updated headline and subheadline */}
         <h1 className="mb-3 display-4 fw-bold">Unlock Your Potential with Unlimited Learning.</h1>
         <h4 className="mb-4">Dive into expert-led courses and accelerate your career today.</h4>
