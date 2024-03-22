@@ -1,10 +1,10 @@
 // components/home/testimonials/index.tsx
-import React from 'react';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import testimonialsData, { Testimonial } from '@/lib/data/testimonials'; // Adjust path as necessary
-import TestimonialItem from './item'; // Adjust path as necessary
+import testimonialsData, { Testimonial } from "@/lib/data/testimonials"; // Adjust path as necessary
+import TestimonialItem from "./item"; // Adjust path as necessary
 
 /**
  * The TestimonialsSection component showcases user testimonials using a carousel slider.
@@ -26,9 +26,8 @@ import TestimonialItem from './item'; // Adjust path as necessary
  * <TestimonialsSection />
  *
  * @returns {React.ReactElement} A section containing a carousel slider of testimonials.
-*/
+ */
 const TestimonialsSection: React.FC = () => {
-
   const settings = {
     dots: true,
     infinite: true,
@@ -49,14 +48,20 @@ const TestimonialsSection: React.FC = () => {
   };
 
   return (
-    <section className="container-fluid text-center py-5 px-2 bg-warning"> {/* Bootstrap classes for full-width container, text alignment, and padding */}
-        <div className='container py-5'> 
-            <Slider {...settings}>
-                {testimonialsData.map((testimonial: Testimonial, index: number) => (
-                <TestimonialItem key={index} quote={testimonial.quote} author={testimonial.author} />
-                ))}
-            </Slider>
-        </div>
+    <section className="container-fluid text-center py-5 px-2 bg-warning">
+      {" "}
+      {/* Bootstrap classes for full-width container, text alignment, and padding */}
+      <div className="container py-5">
+        <Slider {...settings}>
+          {testimonialsData.map((testimonial: Testimonial, index: number) => (
+            <TestimonialItem
+              key={index}
+              quote={testimonial.quote}
+              author={testimonial.author}
+            />
+          ))}
+        </Slider>
+      </div>
     </section>
   );
 };

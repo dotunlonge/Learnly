@@ -7,21 +7,20 @@
  * design features of the Navbar component without relying on actual browser window resizing.
  */
 
-import { render, screen } from '@testing-library/react';
-import Navbar from '@/pages/components/navbar';
+import { render, screen } from "@testing-library/react";
+import Navbar from "@/pages/components/navbar";
 
 /**
  * Mocks the useWindowSize hook to control screen size simulation.
  * This mock allows tests to specify screen size conditions (large or small) and verify
  * the Navbar component's responsiveness.
  */
-jest.mock('@/pages/hooks/useWindowSize', () => ({
+jest.mock("@/pages/hooks/useWindowSize", () => ({
   __esModule: true, // Necessary for ES Module compatibility.
   default: jest.fn(), // Mocks the default export (the hook function) to be a jest function.
 }));
 
-describe('Navbar Component On Homepage', () => {
-  
+describe("Navbar Component On Homepage", () => {
   beforeEach(() => {
     render(<Navbar />);
   });
@@ -31,8 +30,7 @@ describe('Navbar Component On Homepage', () => {
    * This test ensures that the primary branding element is visible to users
    * at all times, regardless of screen size.
    */
-  test('Navbar renders with the Learnly brand visible', () => {
-    expect(screen.getByText('Learnly')).toBeInTheDocument();
+  test("Navbar renders with the Learnly brand visible", () => {
+    expect(screen.getByText("Learnly")).toBeInTheDocument();
   });
-
 });

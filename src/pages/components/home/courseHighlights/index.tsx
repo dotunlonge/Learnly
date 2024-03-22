@@ -1,7 +1,7 @@
 // components/home/courseHighlights/index.tsx
-import React from 'react';
-import CourseHighlightItem from './item';
-import courseHighlights, { CourseHighlight } from '@/lib/data/courseHighlights';
+import React from "react";
+import CourseHighlightItem from "./item";
+import courseHighlights, { CourseHighlight } from "@/lib/data/courseHighlights";
 
 /**
  * The CourseHighlightsSection component showcases a selection of standout courses available on Learnly.
@@ -25,9 +25,16 @@ const CourseHighlightsSection: React.FC = () => {
       <div className="container">
         <h2 className="text-center mb-4">Our Courses</h2>
         <div className="row row-cols-1 row-cols-md-3 g-4 my-5">
-          {Boolean(courseHighlights) && courseHighlights.map((course: CourseHighlight, index: number) => (
-            <CourseHighlightItem url={course.url} key={index} image={course.image} title={course.title} description={course.description} />
-          ))}
+          {Boolean(courseHighlights) &&
+            courseHighlights.map((course: CourseHighlight, index: number) => (
+              <CourseHighlightItem
+                url={course.url}
+                key={index}
+                image={course.image}
+                title={course.title}
+                description={course.description}
+              />
+            ))}
         </div>
       </div>
     </section>

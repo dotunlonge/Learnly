@@ -1,8 +1,8 @@
 // components/home/faq/index.tsx
 
-import React from 'react';
-import FAQItem from './item';
-import faqs, { Faq } from '@/lib/data/faqs';
+import React from "react";
+import FAQItem from "./item";
+import faqs, { Faq } from "@/lib/data/faqs";
 
 /**
  * Represents the Frequently Asked Questions (FAQ) Section of the Learnly platform.
@@ -16,16 +16,19 @@ import faqs, { Faq } from '@/lib/data/faqs';
 const FAQSection: React.FC = () => {
   return (
     <section className="container-fluid bg-white py-5">
-              <div className='container'>
-
-      <h2 className="text-center mb-5">Frequently Asked Questions</h2>
-      <div className="accordion" id="faqAccordion">
-        {faqs.map((faq: Faq, index: number) => (
-          <FAQItem key={index} index={index} question={faq.question} answer={faq.answer} />
-        ))}
+      <div className="container">
+        <h2 className="text-center mb-5">Frequently Asked Questions</h2>
+        <div className="accordion" id="faqAccordion">
+          {faqs.map((faq: Faq, index: number) => (
+            <FAQItem
+              key={index}
+              index={index}
+              question={faq.question}
+              answer={faq.answer}
+            />
+          ))}
+        </div>
       </div>
-      </div>
-      
     </section>
   );
 };
